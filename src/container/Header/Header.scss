@@ -1,0 +1,22 @@
+
+        header{
+            height: 80px;
+            background-color: rgb(8, 8, 44);
+            .header-section{
+                flex-direction: column;
+                justify-content: center;
+                
+                .logo{
+                    text-align: left;
+                img {
+                     max-height: 30px;
+                    }
+                }
+                .mobile-menu-section{
+                    justify-content: space-evenly;
+                    } 
+                 }
+            }
+        
+        
+        

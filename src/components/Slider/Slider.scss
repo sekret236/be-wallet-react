@@ -1,0 +1,29 @@
+.slider{
+    background-image: url(../../assets/images/home_wallet_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+    .position{
+        flex-direction: column;
+        justify-content: center;
+
+        .wallet{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 30px;
+            p{
+                font-size: 36px;
+                color: white;
+            }
+    }
+        
+        .home-wallet{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

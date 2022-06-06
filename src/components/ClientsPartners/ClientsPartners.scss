@@ -1,0 +1,29 @@
+.clientsPartners {
+    justify-content: center;
+}
+    .clients-and-partners{
+    background-color: white;
+    .partners-header{
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+    .home_wallet_client {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+        margin-left: -15px;
+    margin-right: -15px;
+        img{
+            width: 90%;
+            border-bottom: 1px solid transparent;
+            cursor: pointer;
+        }
+        img:hover{
+            border-bottom: 1px solid gray;
+        }
+    }
+    
+}
+
