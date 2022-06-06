@@ -7,13 +7,13 @@ export const FooterOurMission = () => {
                 <p className="h5">Our mission</p>
                 <ul className="wallet-information">
                     <li>
-                        <a href="">Curabitur</a>
+                        <a href="#">Curabitur</a>
                     </li>
                     <li>
-                        <a href="">Donec ligula</a>
+                        <a href="#">Donec ligula</a>
                     </li>
                     <li>
-                        <a href="">Vestibulum</a>
+                        <a href="#">Vestibulum</a>
                     </li>
                 </ul>
             </div>

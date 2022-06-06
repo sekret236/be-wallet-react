@@ -12,7 +12,7 @@ export const Slider = () => {
                             <p>Pay by your phone easily, anywhere.</p>
                         </div>
                         <div className="col-md-6 home-wallet">
-                        <img src={homeWaletSlider} alt="" />
+                        <img src={homeWaletSlider} alt="#" />
                         </div>
                     </div>
                 </div>

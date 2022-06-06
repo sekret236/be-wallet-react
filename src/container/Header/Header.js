@@ -11,7 +11,7 @@ export const Header = () => {
                     <div className="row header-section">
                         <div className="col-md-4">
                             <div className="logo">
-                                <img src={logo} alt="" />
+                                <img src={logo} alt="#" />
                             </div>
                         </div>
                         <div className="col-md-8 mobile-menu-section">
