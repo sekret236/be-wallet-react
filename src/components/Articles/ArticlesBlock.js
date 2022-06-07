@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ArticlesBlock = ({imageJpg, date, artname, question, topic}) => {
+export const ArticlesBlock = ({ imageJpg, date, artname, question, topic }) => {
     return (
         <>
             <div className="articles-img">

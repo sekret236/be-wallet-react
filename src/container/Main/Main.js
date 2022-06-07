@@ -4,16 +4,15 @@ import { ClientsPartners } from 'components/ClientsPartners/ClientsPartners'
 import { Features } from 'components/Features/Features'
 import { Slider } from 'components/Slider/Slider'
 
-
 export const Main = () => {
     return (
         <>
-        <main>
-            <Slider />
-            <Features />
-            <Articles />
-            <ClientsPartners />
-        </main>
+            <main>
+                <Slider />
+                <Features />
+                <Articles />
+                <ClientsPartners />
+            </main>
         </>
     )
 }

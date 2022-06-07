@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 import './FooterSocialMedia.scss'
 
-export const FooterSocialMedia =() => {
+export const FooterSocialMedia = () => {
     return (
         <>
-        <div class="col-xs-6 social-media">
-                <div class="icon wiFi"></div>
-                <div class="icon facebook"></div>
-                <div class="icon twitter"></div>
-                <div class="icon in"></div>
+            <div className="col-xs-6 social-media">
+                <div className="icon wiFi"></div>
+                <div className="icon facebook"></div>
+                <div className="icon twitter"></div>
+                <div className="icon in"></div>
             </div>
         </>
     )

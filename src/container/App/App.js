@@ -4,14 +4,12 @@ import { Main } from 'container/Main/Main'
 import './App.scss'
 import { Footer } from 'container/Footer/Footer'
 
-
 export const App = () => {
     return (
         <>
-           <Header />
-           <Main />
-           <Footer />
-                               
+            <Header />
+            <Main />
+            <Footer />
         </>
     )
 }

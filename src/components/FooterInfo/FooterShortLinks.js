@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 export const FooterShortLinks = () => {
     return (
         <>
-        <div className="links-information">
+            <div className="links-information">
                 <p className="h5">Shortcut links</p>
                 <ul className="wallet-information">
                     <li>

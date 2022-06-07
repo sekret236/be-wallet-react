@@ -13,7 +13,6 @@ export const Articles = () => {
                             <h1 className="h1">News and articles</h1>
                         </div>
                         <div className="col-md-12 articles-section">
-
                             {articlesArray.map(
                                 ({
                                     id,
