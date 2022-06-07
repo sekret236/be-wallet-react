@@ -8,7 +8,7 @@ export const FooterLogo = () => {
         <>
             <div className="logo-information">
                 <div className="logo">
-                    <a href="#">
+                    <a href="##">
                         <img src={logo} alt="" />
                     </a>
                 </div>

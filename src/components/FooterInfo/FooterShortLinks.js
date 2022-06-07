@@ -7,19 +7,19 @@ export const FooterShortLinks = () => {
                 <p className="h5">Shortcut links</p>
                 <ul className="wallet-information">
                     <li>
-                        <a href="#">Aliquam</a>
+                        <a href="##">Aliquam</a>
                     </li>
                     <li>
-                        <a href="#">Nulla imperdiet</a>
+                        <a href="##">Nulla imperdiet</a>
                     </li>
                     <li>
-                        <a href="#">Quisque</a>
+                        <a href="##">Quisque</a>
                     </li>
                     <li>
-                        <a href="#">Etiam commodo</a>
+                        <a href="##">Etiam commodo</a>
                     </li>
                     <li>
-                        <a href="#">Morbi</a>
+                        <a href="##">Morbi</a>
                     </li>
                 </ul>
             </div>

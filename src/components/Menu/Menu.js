@@ -8,27 +8,27 @@ export const Menu = () => {
                 <ul>
                     <li className="active">
                         {' '}
-                        <a href="#">home</a>{' '}
+                        <a href="##">home</a>{' '}
                     </li>
                     <li>
                         {' '}
-                        <a href="#">about</a>{' '}
+                        <a href="##">about</a>{' '}
                     </li>
                     <li>
                         {' '}
-                        <a href="#">articles</a>{' '}
+                        <a href="##">articles</a>{' '}
                     </li>
                     <li>
                         {' '}
-                        <a href="#">services</a>{' '}
+                        <a href="##">services</a>{' '}
                     </li>
                     <li>
                         {' '}
-                        <a href="#">contact us</a>{' '}
+                        <a href="##">contact us</a>{' '}
                     </li>
                     <li className="border-blue">
                         {' '}
-                        <a href="#" className="color-blue">
+                        <a href="##" className="color-blue">
                             favourites
                         </a>{' '}
                     </li>
