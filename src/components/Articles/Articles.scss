@@ -33,8 +33,16 @@
         }
         .text{
             margin-bottom: 10px;
+            padding-left: 10px;
             border-bottom: 2px solid transparent;
             cursor: pointer;
+            font-weight: bold;
+        }
+        .context {
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
+            text-indent: 15px;
         }
         .data{
             font-size: 10px;

@@ -19,6 +19,7 @@ export const Articles = () => {
                                     imageJpg,
                                     date,
                                     artname,
+                                    context,
                                     question,
                                     topic,
                                 }) => (
@@ -27,6 +28,7 @@ export const Articles = () => {
                                             imageJpg={imageJpg}
                                             date={date}
                                             artname={artname}
+                                            context={context}
                                             question={question}
                                             topic={topic}
                                         />
