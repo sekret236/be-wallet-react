@@ -12,11 +12,18 @@
         align-items: center;
         justify-content: space-between;
         .logo-footer{
-        height: 100%;
+     
        p{
         font-size: 14px;
         color: #c1c1c1;
+        padding-top: 15px;
        } 
       }
     }
+}
+.footer-container {
+    display: flex;
+}
+.row-footer {
+    display: flex;
 }

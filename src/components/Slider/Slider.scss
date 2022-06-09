@@ -1,4 +1,4 @@
-.slider{
+/*.slider{
     background-image: url(../../assets/images/home_wallet_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -26,4 +26,12 @@
             }
         }
     }
+}*/
+
+.slider {
+    height: 500px;
+    background-image: url(../../assets/images/home_wallet_bg.jpg);
+}
+.w-100 {
+    height: 500px;
 }

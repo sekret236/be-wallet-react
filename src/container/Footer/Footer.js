@@ -10,16 +10,18 @@ export const Footer = () => {
         <>
             <footer className="footer-information">
                 <div className="container">
-                    <div className="row col-md-12">
-                        <FooterLogo></FooterLogo>
-                        <FooterInfo></FooterInfo>
+                    <div className="row">
+                        <div className="col-md-12 footer-container">
+                            <FooterLogo></FooterLogo>
+                            <FooterInfo></FooterInfo>
+                        </div>
                     </div>
                 </div>
             </footer>
             <footer className="footer">
                 <div className="container">
                     <div className="row row-footer">
-                        <div className="col-xs-6 logo-footer">
+                        <div className="col-md-6 logo-footer">
                             <p>&copy2022 Web world. All rights Reserved</p>
                         </div>
                         <FooterSocialMedia></FooterSocialMedia>
