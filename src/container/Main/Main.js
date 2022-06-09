@@ -9,8 +9,8 @@ export const Main = () => {
         <>
             <main>
                 <Slider />
-                <Features />
                 <Articles />
+                <Features />
                 <ClientsPartners />
             </main>
         </>

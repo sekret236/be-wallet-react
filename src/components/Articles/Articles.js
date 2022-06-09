@@ -38,7 +38,6 @@ export const Articles = () => {
                         </div>
                     </div>
                 </div>
-                <hr />
             </section>
         </>
     )

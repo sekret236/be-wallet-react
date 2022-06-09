@@ -1,3 +1,4 @@
+import Carousel from 'react-bootstrap/Carousel'
 import React from 'react'
 
 import sliderF from '../../assets/images/slider1.jpg'
@@ -7,62 +8,52 @@ import sliderTh from '../../assets/images/slider3.jpg'
 export const SliderCarousel = () => {
     return (
         <>
-            <div
-                id="carouselExampleIndicators"
-                className="carousel slide"
-                data-ride="carousel"
-            >
-                <ol className="carousel-indicators">
-                    <li
-                        data-target="#carouselExampleIndicators"
-                        data-slide-to="0"
-                        className="active"
-                    ></li>
-                    <li
-                        data-target="#carouselExampleIndicators"
-                        data-slide-to="1"
-                    ></li>
-                    <li
-                        data-target="#carouselExampleIndicators"
-                        data-slide-to="2"
-                    ></li>
-                </ol>
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img src={sliderF} className="d-block w-100" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={sliderS} className="d-block w-100" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                        <img src={sliderTh} className="d-block w-100" alt="..." />
-                    </div>
-                </div>
-                <a
-                    className="carousel-control-prev"
-                    href="#carouselExampleIndicators"
-                    role="button"
-                    data-slide="prev"
-                >
-                    <span
-                        className="carousel-control-prev-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span className="sr-only">Previous</span>
-                </a>
-                <a
-                    className="carousel-control-next"
-                    href="#carouselExampleIndicators"
-                    role="button"
-                    data-slide="next"
-                >
-                    <span
-                        className="carousel-control-next-icon"
-                        aria-hidden="true"
-                    ></span>
-                    <span className="sr-only">Next</span>
-                </a>
-            </div>
+            <Carousel>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={sliderF}
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>Business processes</h3>
+                        <p>
+                            Nulla vitae elit libero, a pharetra augue mollis
+                            interdum.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={sliderS}
+                        alt="Second slide"
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Accounting</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={sliderTh}
+                        alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Banking services</h3>
+                        <p>
+                            Praesent commodo cursus magna, vel scelerisque nisl
+                            consectetur.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
         </>
     )
 }
