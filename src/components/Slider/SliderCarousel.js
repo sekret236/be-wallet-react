@@ -12,11 +12,11 @@ export const SliderCarousel = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={sliderF}
+                        src={sliderTh}
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Business processes</h3>
+                        <h3>Banking services</h3>
                         <p>
                             Nulla vitae elit libero, a pharetra augue mollis
                             interdum.
@@ -41,12 +41,12 @@ export const SliderCarousel = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={sliderTh}
+                        src={sliderF}
                         alt="Third slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>Banking services</h3>
+                        <h3>Business processes</h3>
                         <p>
                             Praesent commodo cursus magna, vel scelerisque nisl
                             consectetur.

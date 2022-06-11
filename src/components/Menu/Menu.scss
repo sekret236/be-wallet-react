@@ -1,8 +1,10 @@
 .menu{
+    
     ul{
         display: flex; 
         justify-content: space-evenly;
         align-items: center;
+        list-style-type: none;
         li{
             height: 70px;
             padding: 0 5px;
@@ -33,5 +35,11 @@
         .border-blue:hover{
             border-bottom: 3px solid rgb(43, 38, 213);
         }
+    }
+}
+nav.navigation {
+    height: 100%;
+    ul{
+        height: 100%;
     }
 }
