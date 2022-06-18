@@ -41,5 +41,45 @@ nav.navigation {
     height: 100%;
     ul{
         height: 100%;
+        margin-bottom: 0;
     }
+}
+
+.categories{
+    position: relative;
+    .submenu{
+        height: 140px;
+        width: 100px;
+        padding: 0;
+        left: -2px;
+        position: absolute;
+        display: flex;
+        display: none;
+        flex-direction: column;
+        z-index: 1;
+        background-color: rgb(8, 8, 44);
+        li{
+            padding: 0;
+            margin: 5px 0;
+            width: 80px;
+            height: 25px;
+            line-height: 30px;
+            a{
+                height: 30px;
+                line-height: 30px;
+                
+            }
+        }
+        li:hover {
+            font-weight: bold;
+            border-bottom: none;
+        }
+    }
+}
+.categories:hover .submenu {
+    display: flex;
+    border-top: 3px solid white;
+}
+.menu ul li.categories:hover{
+    border-bottom: none;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const ArticlesBlock = ({ imageJpg, date, artname, context, question, topic }) => {
     return (
@@ -13,9 +14,12 @@ export const ArticlesBlock = ({ imageJpg, date, artname, context, question, topi
                 <p>{question}</p>
                 <div className="like"></div>
             </div>
+            
             <form action="" method="">
                 <button>{topic}</button>
             </form>
+            
+            
         </>
     )
 }
