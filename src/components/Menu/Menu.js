@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Menu.scss'
-import { DropdownButton, Dropdown } from 'react-bootstrap'
 
 export const Menu = () => {
     return (
