@@ -1,21 +1,26 @@
 import React from 'react'
 import './AboutPage.scss'
+import { AboutSlider } from './AboutSlider'
+import { OurCompany } from './OurCompany'
+
 export const AboutPage = () => {
     return (
         <>
-            <section className='aboutPage'>
+            <OurCompany />
+            <section className="aboutPage">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 companyDesc">
-                            <h2 className="h2 name">Our company</h2>
-                        </div>
-
-                        <div className="col-md-12 companyDesc">
-                            <h2 className="h2">Vestibulum tincidunt</h2>
-                            <p>Aenean augue eu quam. Maecenas pretium, ipsum ullamcorper ac, felis. Pellentesque habitant morbi tristique mauris vehicula sit amet erat. Sed et luctus augue imperdiet tincidunt</p>
+                            <h3 className="h3">Vestibulum tincidunt</h3>
+                            <p>
+                                Aenean augue eu quam. Maecenas pretium, ipsum
+                                ullamcorper ac, felis. Pellentesque habitant
+                                morbi tristique mauris vehicula sit amet erat.
+                                Sed et luctus augue imperdiet tincidunt
+                            </p>
                         </div>
                         <div className="col-md-6">
-                            <h3 className="h3">Curabitur tempor</h3>
+                            <h4 className="h4">Curabitur tempor</h4>
                             <p>
                                 Lorem ipsum dolor sit amet quam. Phasellus a
                                 ipsum. Fusce imperdiet quis, eleifend justo at
@@ -28,7 +33,7 @@ export const AboutPage = () => {
                             </p>
                         </div>
                         <div className="col-md-6">
-                            <h3 className="h3">Duis ipsum</h3>
+                            <h4 className="h4">Duis ipsum</h4>
                             <p>
                                 Lorem ipsum dolor sit amet quam. Phasellus a
                                 ipsum. Fusce imperdiet quis, eleifend justo at
@@ -43,6 +48,7 @@ export const AboutPage = () => {
                     </div>
                 </div>
             </section>
+            <AboutSlider />
         </>
     )
 }

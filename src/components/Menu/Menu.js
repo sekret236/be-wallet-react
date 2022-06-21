@@ -1,63 +1,70 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Menu.scss'
+import { DropdownButton, Dropdown } from 'react-bootstrap'
 
 export const Menu = () => {
     return (
         <>
             <nav className="menu navigation">
                 <ul>
-                    <Link to="/">
-                        <li className="active">
-                            {' '}
-                            <a href="##">home</a>{' '}
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'menu li'
+                        }
+                    >
+                        home
+                    </NavLink>
+                    <NavLink
+                        to="/About"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'menu a'
+                        }
+                    >
+                        about
+                    </NavLink>
+                    <NavLink
+                        to="/Category"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'menu li'
+                        }
+                    >
+                        <li className="categories">
+                            Articles
+                            <ul className="submenu">
+                                <Link to="/Business">
+                                    <li>Business</li>
+                                </Link>
+                                <Link to="/Finances">
+                                    <li>Finances</li>
+                                </Link>
+                                <Link to="/Personal">
+                                    <li>Personal</li>
+                                </Link>
+                                <Link to="/Tax">
+                                    <li>Tax</li>
+                                </Link>
+                            </ul>
                         </li>
-                    </Link>
-                    <Link to="/About">
-                        <li>
-                            {' '}
-                            <a href="##">about</a>{' '}
-                        </li>
-                    </Link>
+                    </NavLink>
 
-                    <li className="categories">
-                        {' '}
-                        <a href="##">articles</a>{' '}
-                        <ul className="submenu">
-                            <Link to="/Business">
-                                <li>
-                                    <a href="">Business</a>
-                                </li>
-                            </Link>
-                            <Link to="/Finances">
-                                <li>
-                                    <a href="">Finances</a>
-                                </li>
-                            </Link>
-                            <Link to="/Personal">
-                                <li>
-                                    <a href="">Personal</a>
-                                </li>
-                            </Link>
-                            <Link to="/Tax">
-                                <li>
-                                    <a href="">Tax</a>
-                                </li>
-                            </Link>
-                        </ul>
-                    </li>
-                    <Link to="/Services">
-                        <li>
-                            {' '}
-                            <a href="##">services</a>{' '}
-                        </li>
-                    </Link>
-                    <Link to="/ContactUs">
-                        <li>
-                            {' '}
-                            <a href="##">contact us</a>{' '}
-                        </li>
-                    </Link>
+                    <NavLink
+                        to="/Services"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'menu li'
+                        }
+                    >
+                        Services
+                    </NavLink>
+                    <NavLink
+                        to="/ContactUs"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'menu li'
+                        }
+                    >
+                        Contact Us
+                    </NavLink>
 
                     <li className="border-blue">
                         {' '}

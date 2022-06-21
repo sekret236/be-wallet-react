@@ -1,11 +1,20 @@
 import React from 'react'
+import Image from 'react-bootstrap/Image'
 import { Link } from 'react-router-dom'
 
-export const ArticlesBlock = ({ imageJpg, date, artname, context, question, topic }) => {
+export const ArticlesBlock = ({
+    imagejpg,
+    date,
+    artname,
+    context,
+    question,
+    topic,
+    category,
+}) => {
     return (
         <>
             <div className="articles-img">
-                <img src={imageJpg} alt="" />
+                <Image src={imagejpg} rounded alt="" />
             </div>
             <p className="data">{date}</p>
             <p className="text">{artname}</p>
@@ -14,12 +23,11 @@ export const ArticlesBlock = ({ imageJpg, date, artname, context, question, topi
                 <p>{question}</p>
                 <div className="like"></div>
             </div>
-            
-            <form action="" method="">
-                <button>{topic}</button>
-            </form>
-            
-            
+            <Link to={`/Category/${category}`}>
+                <form action="" method="">
+                    <button>{category}</button>
+                </form>
+            </Link>
         </>
     )
 }

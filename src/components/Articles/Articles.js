@@ -13,24 +13,29 @@ export const Articles = () => {
                             <h1 className="h1">News and articles</h1>
                         </div>
                         <div className="col-md-12 articles-section">
-                            {articlesArray.map(
+                            {articlesArray
+                            .filter(
+                                (topic) => topic.topic === 'Main'
+                            ).map(
                                 ({
                                     id,
-                                    imageJpg,
+                                    imagejpg,
                                     date,
                                     artname,
                                     context,
                                     question,
                                     topic,
+                                    category,
                                 }) => (
                                     <div className="iconbox" key={id}>
                                         <ArticlesBlock
-                                            imageJpg={imageJpg}
+                                            imagejpg={imagejpg}
                                             date={date}
                                             artname={artname}
                                             context={context}
                                             question={question}
                                             topic={topic}
+                                            category={category} 
                                         />
                                     </div>
                                 )
