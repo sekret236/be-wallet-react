@@ -4,11 +4,13 @@ import { Main } from 'container/Main/Main'
 import './App.scss'
 import { Footer } from 'container/Footer/Footer'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import ScrollToTop from '../../components/ScrollToTop'
 
 export const App = () => {
     return (
         <>
             <Header />
+            <ScrollToTop />
             <Main />
             <Footer />
         </>

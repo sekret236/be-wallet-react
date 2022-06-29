@@ -3,6 +3,7 @@ import Image from 'react-bootstrap/Image'
 import './CategoriesPage.scss'
 import articlesArray from '../../Utils/articlesArray'
 import { ButtonToolbar, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 export const TaxPage = () => {
     return (
@@ -10,7 +11,7 @@ export const TaxPage = () => {
             <section className="categoriesTitle">
                 <div className="container">
                     <div className="row">
-                    <div className="col-md-12 title">
+                        <div className="col-md-12 title">
                             <h1 className="h1">Tax</h1>
                         </div>
                     </div>
@@ -18,12 +19,9 @@ export const TaxPage = () => {
             </section>
             <section className="categoriesPage">
                 <div className="container">
-                    <div className="row">
-                        
+                    <div className="row categoryPage">
                         {articlesArray
-                            .filter(
-                                (category) => category.category === 'Tax'
-                            )
+                            .filter((category) => category.category === 'Tax')
                             .map(
                                 ({
                                     id,
@@ -34,7 +32,10 @@ export const TaxPage = () => {
                                     topic,
                                     category,
                                 }) => (
-                                    <div className="col-md-12 blockArticles" key={id}>
+                                    <div
+                                        className="col-md-5 blockArticles"
+                                        key={id}
+                                    >
                                         <div
                                             className="articles-img"
                                             imagejpg={imagejpg}
@@ -51,29 +52,26 @@ export const TaxPage = () => {
                                             />
                                         </div>
                                         <div className="description">
-                                            <p className="text">{artname}</p>
-                                            <p>
-                                                Cum sociis natoque penatibus et
-                                                malesuada sit amet quam. Aliquam
-                                                nonummy, tellus ante mollis
-                                                sodales. Quisque nulla.
-                                                Suspendisse vitae ante. Donec
-                                                sit amet, consectetuer
-                                                adipiscing elit. Sed dignissim
-                                                vitae, vulputate imperdiet. Cum
-                                                sociis natoque penatibus et
-                                                malesuada sit amet quam. Aliquam
-                                                nonummy, tellus ante mollis
-                                                sodales. Quisque nulla.
-                                            </p>
+                                            <Link
+                                                to={`/Category/${category}/${id}`}
+                                            >
+                                                <p className="text">
+                                                    {artname}
+                                                </p>
+                                            </Link>
+                                            <p>{context}</p>
                                             <div className="do-you-like">
                                                 <p>{question}</p>
                                                 <div className="like"></div>
                                             </div>
                                             <ButtonToolbar>
-                                                <Button bsstyle="primary">
-                                                    Read more..
-                                                </Button>
+                                                <Link
+                                                    to={`/Category/${category}/${id}`}
+                                                >
+                                                    <Button bsstyle="primary">
+                                                        Read more..
+                                                    </Button>
+                                                </Link>
                                             </ButtonToolbar>
                                         </div>
                                     </div>

@@ -1,14 +1,13 @@
 .features{
-    background-color: rgb(187, 187, 186);
+    background-color: rgba(84, 176, 251, 0.48);
     padding-top: 25px;
     padding-bottom: 25px;
     .features-container{
-        /*position: relative;
-        margin-top: -50px;
-        z-index: 1;*/
         background-color: white;
         .appsFeatures{
             justify-content: center;
+            row-gap: 20px;
+            column-gap: 20px;
         }
          .row{
              
@@ -55,8 +54,8 @@
             width: 100%;
         }
     }
-        }
-       
-           
+    }
+              
   }
+  
 }

@@ -17,6 +17,7 @@
     }
     .contact-form-block {
     background-color: #f4ecec;
+    box-shadow: 0px 2px 16px 8px rgba(0,0,0,0.2);
     }
     .form-contact-section {
         display: flex;
@@ -59,9 +60,10 @@
     .name-email {
         padding-bottom: 30px;
         display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
     }
     
     .close-button {
@@ -82,4 +84,6 @@
             color: #0b5ed7;
         }
     }
-    
+    .map {
+        padding-top: 50px;
+    }

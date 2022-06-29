@@ -9,9 +9,10 @@ import { FinancesPage } from 'pages/Categories/FinancesPage'
 import { PersonalPage } from 'pages/Categories/PersonalPage'
 import { TaxPage } from 'pages/Categories/TaxPage'
 import { AboutPage } from 'pages/About/AboutPage'
-import { ServicesPage } from 'pages/Services/ServicesPage'
 import { ContactUsPage } from 'pages/ContactUs/ContactUsPage'
 import { CategoriesPage } from 'pages/Categories/CategoriesPage'
+import { ArticlesDescription } from 'pages/Categories/ArticlesDescription'
+
 
 export const Main = () => {
     return (
@@ -34,13 +35,13 @@ export const Main = () => {
                 <Route path="/Personal" element={<PersonalPage />} />
                 <Route path="/Tax" element={<TaxPage />} />
                 <Route path="/About" element={<AboutPage />} />
-                <Route path="/Services" element={<ServicesPage />} />
                 <Route path="/ContactUs" element={<ContactUsPage />} />
                 <Route path="/Category" element={<CategoriesPage />} />
-                <Route path="/Category/Finances" element={<FinancesPage />} />
                 <Route path="/Category/Business" element={<BusinessPage />} />
+                <Route path="/Category/Finances" element={<FinancesPage />} />
                 <Route path="/Category/Personal" element={<PersonalPage />} />
                 <Route path="/Category/Tax" element={<TaxPage />} />
+                <Route path="/Category/:category/:id" element={<ArticlesDescription />}/>   
             </Routes>
         </>
     )

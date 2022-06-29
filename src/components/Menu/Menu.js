@@ -30,7 +30,7 @@ export const Menu = () => {
                         }
                     >
                         <li className="categories">
-                            Articles
+                            Articles <i className="down"> </i>
                             <ul className="submenu">
                                 <Link to="/Business">
                                     <li>Business</li>
@@ -48,14 +48,6 @@ export const Menu = () => {
                         </li>
                     </NavLink>
 
-                    <NavLink
-                        to="/Services"
-                        className={({ isActive }) =>
-                            isActive ? 'active' : 'menu li'
-                        }
-                    >
-                        Services
-                    </NavLink>
                     <NavLink
                         to="/ContactUs"
                         className={({ isActive }) =>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'react-bootstrap/Image'
 import { Link } from 'react-router-dom'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 
 export const ArticlesBlock = ({
     imagejpg,
@@ -8,12 +9,12 @@ export const ArticlesBlock = ({
     artname,
     context,
     question,
-    topic,
     category,
+    id,
 }) => {
     return (
         <>
-            <div className="articles-img">
+            <div className="articles-img scale">
                 <Image src={imagejpg} rounded alt="" />
             </div>
             <p className="data">{date}</p>
@@ -21,9 +22,9 @@ export const ArticlesBlock = ({
             <p className="context">{context}</p>
             <div className="do-you-like">
                 <p>{question}</p>
-                <div className="like"></div>
+                <FavoriteBorderIcon className="like" />
             </div>
-            <Link to={`/Category/${category}`}>
+            <Link className="button-category" to={`/Category/${category}`}>
                 <form action="" method="">
                     <button>{category}</button>
                 </form>

@@ -10,7 +10,7 @@ export const ContactUsPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">
-                            <h3 className="h2">Contact Us</h3>
+                            <h2 className="h2">Contact Us</h2>
                         </div>
                     </div>
                 </div>

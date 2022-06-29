@@ -14,33 +14,33 @@ export const Articles = () => {
                         </div>
                         <div className="col-md-12 articles-section">
                             {articlesArray
-                            .filter(
-                                (topic) => topic.topic === 'Main'
-                            ).map(
-                                ({
-                                    id,
-                                    imagejpg,
-                                    date,
-                                    artname,
-                                    context,
-                                    question,
-                                    topic,
-                                    category,
-                                }) => (
-                                    <div className="iconbox" key={id}>
-                                        <ArticlesBlock
-                                            imagejpg={imagejpg}
-                                            date={date}
-                                            artname={artname}
-                                            context={context}
-                                            question={question}
-                                            topic={topic}
-                                            category={category} 
-                                        />
-                                    </div>
-                                )
-                            )}
+                                .filter((topic) => topic.topic === 'Main')
+                                .map(
+                                    ({
+                                        id,
+                                        imagejpg,
+                                        date,
+                                        artname,
+                                        context,
+                                        question,
+                                        topic,
+                                        category,
+                                    }) => (
+                                        <div className="iconbox" key={id}>
+                                            <ArticlesBlock
+                                                imagejpg={imagejpg}
+                                                date={date}
+                                                artname={artname}
+                                                context={context}
+                                                question={question}
+                                                topic={topic}
+                                                category={category}
+                                            />
+                                        </div>
+                                    )
+                                )}
                         </div>
+                        
                     </div>
                 </div>
             </section>
