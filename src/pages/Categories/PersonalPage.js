@@ -35,7 +35,7 @@ export const PersonalPage = () => {
                                     category,
                                 }) => (
                                     <div
-                                        className="col-md-5 blockArticles"
+                                        className="col-md-5 blockArticles scale"
                                         key={id}
                                     >
                                         <div
@@ -55,7 +55,7 @@ export const PersonalPage = () => {
                                         </div>
                                         <div className="description">
                                             <Link
-                                                to={`/Category/${category}/${id}`}
+                                                to={`/${category}/${id}`}
                                             >
                                                 <p className="text">
                                                     {artname}
@@ -68,7 +68,7 @@ export const PersonalPage = () => {
                                             </div>
                                             <ButtonToolbar>
                                                 <Link
-                                                    to={`/Category/${category}/${id}`}
+                                                    to={`/${category}/${id}`}
                                                 >
                                                     <Button bsstyle="primary">
                                                         Read more..

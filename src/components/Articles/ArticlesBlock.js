@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'react-bootstrap/Image'
 import { Link } from 'react-router-dom'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import { Button } from 'react-bootstrap'
 
 export const ArticlesBlock = ({
     imagejpg,
@@ -11,6 +13,8 @@ export const ArticlesBlock = ({
     question,
     category,
     id,
+    isLiked = false,
+    toggleLikeState,
 }) => {
     return (
         <>
@@ -22,7 +26,13 @@ export const ArticlesBlock = ({
             <p className="context">{context}</p>
             <div className="do-you-like">
                 <p>{question}</p>
-                <FavoriteBorderIcon className="like" />
+                <Button variant="light" onClick={() => toggleLikeState(id)}>
+                    {isLiked ? (
+                        <FavoriteIcon className="like" />
+                    ) : (
+                        <FavoriteBorderIcon className="like" />
+                    )}
+                </Button>
             </div>
             <Link className="button-category" to={`/Category/${category}`}>
                 <form action="" method="">

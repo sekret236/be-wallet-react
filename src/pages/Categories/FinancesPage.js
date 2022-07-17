@@ -12,7 +12,7 @@ export const FinancesPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 title">
-                            <h1 className="h1">Finances</h1>
+                           <h1 className="h1">Finances</h1>
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ export const FinancesPage = () => {
                                     category,
                                 }) => (
                                     <div
-                                        className="col-md-5 blockArticles"
+                                        className="col-md-5 blockArticles scale"
                                         key={id}
                                     >
                                         <div
@@ -55,7 +55,7 @@ export const FinancesPage = () => {
                                         </div>
                                         <div className="description">
                                             <Link
-                                                to={`/Category/${category}/${id}`}
+                                                to={`/${category}/${id}`}
                                             >
                                                 <p className="text">
                                                     {artname}
@@ -68,7 +68,7 @@ export const FinancesPage = () => {
                                             </div>
                                             <ButtonToolbar>
                                                 <Link
-                                                    to={`/Category/${category}/${id}`}
+                                                    to={`/${category}/${id}`}
                                                 >
                                                     <Button bsstyle="primary">
                                                         Read more..

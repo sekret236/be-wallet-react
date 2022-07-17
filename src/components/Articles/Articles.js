@@ -3,7 +3,7 @@ import articlesArray from 'Utils/articlesArray'
 import { ArticlesBlock } from './ArticlesBlock'
 import './Articles.scss'
 
-export const Articles = () => {
+export const Articles = ({ toggleLikeState, articlesLikeState }) => {
     return (
         <>
             <section className="articles">
@@ -28,6 +28,7 @@ export const Articles = () => {
                                     }) => (
                                         <div className="iconbox" key={id}>
                                             <ArticlesBlock
+                                                id={id}
                                                 imagejpg={imagejpg}
                                                 date={date}
                                                 artname={artname}
@@ -35,12 +36,15 @@ export const Articles = () => {
                                                 question={question}
                                                 topic={topic}
                                                 category={category}
+                                                toggleLikeState={
+                                                    toggleLikeState
+                                                }
+                                                isLiked={articlesLikeState[id]}
                                             />
                                         </div>
                                     )
                                 )}
                         </div>
-                        
                     </div>
                 </div>
             </section>

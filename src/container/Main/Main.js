@@ -13,8 +13,7 @@ import { ContactUsPage } from 'pages/ContactUs/ContactUsPage'
 import { CategoriesPage } from 'pages/Categories/CategoriesPage'
 import { ArticlesDescription } from 'pages/Categories/ArticlesDescription'
 
-
-export const Main = () => {
+export const Main = ({ toggleLikeState, articlesLikeState }) => {
     return (
         <>
             <Routes>
@@ -23,7 +22,10 @@ export const Main = () => {
                     element={
                         <main>
                             <Slider />
-                            <Articles />
+                            <Articles
+                                toggleLikeState={toggleLikeState}
+                                articlesLikeState={articlesLikeState}
+                            />
                             <Features />
                             <ClientsPartners />
                         </main>
@@ -41,7 +43,10 @@ export const Main = () => {
                 <Route path="/Category/Finances" element={<FinancesPage />} />
                 <Route path="/Category/Personal" element={<PersonalPage />} />
                 <Route path="/Category/Tax" element={<TaxPage />} />
-                <Route path="/Category/:category/:id" element={<ArticlesDescription />}/>   
+                <Route
+                    path="/:category/:id"
+                    element={<ArticlesDescription />}
+                />
             </Routes>
         </>
     )

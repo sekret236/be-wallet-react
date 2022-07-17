@@ -33,7 +33,7 @@ export const TaxPage = () => {
                                     category,
                                 }) => (
                                     <div
-                                        className="col-md-5 blockArticles"
+                                        className="col-md-5 blockArticles scale"
                                         key={id}
                                     >
                                         <div
@@ -53,7 +53,7 @@ export const TaxPage = () => {
                                         </div>
                                         <div className="description">
                                             <Link
-                                                to={`/Category/${category}/${id}`}
+                                                to={`/${category}/${id}`}
                                             >
                                                 <p className="text">
                                                     {artname}
@@ -66,7 +66,7 @@ export const TaxPage = () => {
                                             </div>
                                             <ButtonToolbar>
                                                 <Link
-                                                    to={`/Category/${category}/${id}`}
+                                                    to={`/${category}/${id}`}
                                                 >
                                                     <Button bsstyle="primary">
                                                         Read more..

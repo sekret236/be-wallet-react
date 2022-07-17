@@ -39,7 +39,7 @@ export const BusinessPage = () => {
                                         key={id}
                                     >
                                         <div
-                                            className="articles-img"
+                                            className="articles-img scale"
                                             imagejpg={imagejpg}
                                             artname={artname}
                                             context={context}
@@ -55,7 +55,7 @@ export const BusinessPage = () => {
                                         </div>
                                         <div className="description">
                                             <Link
-                                                to={`/Category/${category}/${id}`}
+                                                to={`/${category}/${id}`}
                                             >
                                                 <p className="text">
                                                     {artname}
@@ -68,7 +68,7 @@ export const BusinessPage = () => {
                                             </div>
                                             <ButtonToolbar>
                                                 <Link
-                                                    to={`/Category/${category}/${id}`}
+                                                    to={`/${category}/${id}`}
                                                 >
                                                     <Button bsstyle="primary">
                                                         Read more..

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Header } from 'container/Header/Header'
 import { Main } from 'container/Main/Main'
 import './App.scss'
@@ -7,11 +7,25 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import ScrollToTop from '../../components/ScrollToTop'
 
 export const App = () => {
+    const [articlesLikeState, setArticlesLikeState] = useState({
+        1: true,
+        2: true,
+    })
+
+    const toggleLikeState = (articleId) =>
+        setArticlesLikeState((prevState) => ({
+            ...prevState,
+            [articleId]: !prevState[articleId],
+        }))
+
     return (
         <>
             <Header />
             <ScrollToTop />
-            <Main />
+            <Main
+                toggleLikeState={toggleLikeState}
+                articlesLikeState={articlesLikeState}
+            />
             <Footer />
         </>
     )

@@ -1,0 +1,33 @@
+.reviews-block .reviews-block-item {
+    background-color: #c6daf9;
+    padding: 15px;
+    margin: 15px 0;
+}
+.textReview:hover{
+    color:  #70a4f3;
+    }
+.textReview{
+    margin-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color:  #0b5ed7;
+    font-size: 14px;
+}
+.colorBlue{
+    border: 1px solid #0b5ed7;
+}
+.reviews-field{
+    background-image: url(/assets/images/bgsection2home_wallet_bgsection2.jpg);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 30px;
+    box-shadow: 2px 5px 16px 10px rgba(0,0,0,0.2);
+}
+.reviews-section{
+    padding-bottom: 20px;
+    
+}
