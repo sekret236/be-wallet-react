@@ -1,4 +1,4 @@
-import { Button, Card, TextField } from '@mui/material'
+import { Button, Card } from '@mui/material'
 import React, { useState } from 'react'
 import { Form } from 'react-bootstrap'
 import { arrReviews } from './ArrReviews'
@@ -36,14 +36,16 @@ export const Reviews = () => {
 
     return (
         <div className="reviews-block">
-            <h5 className="textReview">Please, leave review about this product</h5>
+            <h5 className="textReview">
+                Please, leave review about this product
+            </h5>
             {reviews.map(({ name, text }, i) => (
                 <Card className="reviews-block-item" key={i}>
                     <div>Name: {name}</div>
                     <div>Message: {text}</div>
                 </Card>
             ))}
-            
+
             <div className="contactForm">
                 <Form>
                     <Form.Group

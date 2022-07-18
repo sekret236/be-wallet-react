@@ -1,8 +1,7 @@
-import { Card, Rating, Typography } from '@mui/material'
-import { ArticlesBlock } from 'components/Articles/ArticlesBlock'
+import { Card } from '@mui/material'
 import { Reviews } from 'components/Reviews/Reviews'
 import React from 'react'
-import { Form, Image } from 'react-bootstrap'
+import { Image } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
 import articlesArray, { getArticlesObject } from 'Utils/articlesArray'
 import './CategoriesPage.scss'
@@ -25,7 +24,9 @@ export const ArticlesDescription = ({
                                     alt=""
                                 />
                             </div>
-                            <div className='Stars'><Stars /> </div>
+                            <div className="Stars">
+                                <Stars />{' '}
+                            </div>
                         </div>
                         <div className="col-md-6 articlesDescription">
                             <p className="text">{articlesObject[id].artname}</p>
@@ -36,14 +37,11 @@ export const ArticlesDescription = ({
                                 }}
                             />
                         </div>
-                        
-
 
                         <div className="col-md-11 reviews-field">
-                            <Card className='col-md-9 reviews-section'>
+                            <Card className="col-md-9 reviews-section">
                                 <Reviews />
                             </Card>
-                            
                         </div>
                     </div>
                 </div>
