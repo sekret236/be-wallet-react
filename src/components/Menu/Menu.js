@@ -49,6 +49,14 @@ export const Menu = () => {
                     </NavLink>
 
                     <NavLink
+                        to="/Services"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'menu a'
+                        }
+                    >
+                        services
+                    </NavLink>
+                    <NavLink
                         to="/ContactUs"
                         className={({ isActive }) =>
                             isActive ? 'active' : 'menu li'
@@ -56,13 +64,6 @@ export const Menu = () => {
                     >
                         Contact Us
                     </NavLink>
-
-                    <li className="border-blue">
-                        {' '}
-                        <a href="##" className="color-blue">
-                            favourites
-                        </a>{' '}
-                    </li>
                 </ul>
             </nav>
         </>

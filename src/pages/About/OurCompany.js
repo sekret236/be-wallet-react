@@ -1,19 +1,20 @@
 import React from 'react'
-
-//import { useSpring, animated } from 'react-spring'
+import { bounce } from 'react-animations'
+import styled, { keyframes } from 'styled-components'
 
 export const OurCompany = () => {
-    //const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 } })
+    const Bounce = styled.div`
+        animation: 2s ${keyframes`${bounce}`} infinite;
+    `
 
     return (
         <section className="ourCompany">
             <div className="container">
                 <div className="row">
-                    {/* <div className="col-md-12">
-                        <animated.div style={props}>Our Company</animated.div>
-                    </div> */}
                     <div className="col-md-12">
-                        <h2 className="h2">Our Company</h2>
+                        <Bounce>
+                            <h2 className="h2">Our Company</h2>
+                        </Bounce>
                     </div>
                 </div>
             </div>
