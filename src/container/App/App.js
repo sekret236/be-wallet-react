@@ -18,13 +18,34 @@ export const App = () => {
             [articleId]: !prevState[articleId],
         }))
 
+    const [count, setCount] = useState(1)
+    const addArticle = () => setCount(count + 1)
+    const removeArticle = () => setCount(count - 1)
+
+    const [favouriteArticle, setFavouriteArticle] = useState({
+        1: 1,
+        name: 'Vestibulum commodo volutpat laoreet',
+    })
+
+    const addArticleToFavourite = (articleId, artname) => {
+        setFavouriteArticle((prevState) => ({
+            ...prevState,
+            [articleId]: prevState[articleId] + artname,
+        }))
+    }
+
     return (
         <>
-            <Header />
+            <Header count={count} />
             <ScrollToTop />
             <Main
                 toggleLikeState={toggleLikeState}
                 articlesLikeState={articlesLikeState}
+                count={count}
+                addArticle={addArticle}
+                removeArticle={removeArticle}
+                favouriteArticle={favouriteArticle}
+                addArticleToFavourite={addArticleToFavourite}
             />
             <Footer />
         </>

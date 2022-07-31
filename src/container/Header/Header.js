@@ -3,7 +3,7 @@ import './Header.scss'
 import logo from '../../assets/images/logo.png'
 import { Menu } from 'components/Menu/Menu'
 
-export const Header = () => {
+export const Header = ({ count }) => {
     return (
         <>
             <header className="header">
@@ -15,7 +15,7 @@ export const Header = () => {
                             </div>
                         </div>
                         <div className="col-md-8 mobile-menu-section">
-                            <Menu></Menu>
+                            <Menu count={count} />
                         </div>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import articlesArray from 'Utils/articlesArray'
 import { ArticlesBlock } from './ArticlesBlock'
 import './Articles.scss'
 
-export const Articles = ({ toggleLikeState, articlesLikeState }) => {
+export const Articles = ({ toggleLikeState, articlesLikeState, count, addArticle, removeArticle, addArticleToFavourite }) => {
     return (
         <>
             <section className="articles">
@@ -40,6 +40,10 @@ export const Articles = ({ toggleLikeState, articlesLikeState }) => {
                                                     toggleLikeState
                                                 }
                                                 isLiked={articlesLikeState[id]}
+                                                count={count}
+                                                addArticle={addArticle}
+                                                removeArticle={removeArticle}
+                                                addArticleToFavourite={addArticleToFavourite}
                                             />
                                         </div>
                                     )

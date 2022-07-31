@@ -1,0 +1,22 @@
+.favorites {
+    background-image: url(/assets/images/bgsection2home_wallet_bgsection2.jpg);
+}
+
+.favouriteArticles {
+    display: flex;
+    flex-wrap: wrap;
+    height: 650px;
+    margin: 20px;
+    padding: 30px;
+    row-gap: 15px;
+    
+}
+div .likedArticles {
+    height: 200px;
+    background-color: rgb(159, 187, 249);
+    div{
+        font-size: 14px;
+        flood-color: black;
+        font-weight: bold;
+    }
+}

@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Menu.scss'
+import FavoriteIcon from '@mui/icons-material/Favorite'
 
-export const Menu = () => {
+export const Menu = ({ count }) => {
     return (
         <>
             <nav className="menu navigation">
@@ -64,6 +65,16 @@ export const Menu = () => {
                     >
                         Contact Us
                     </NavLink>
+                    <NavLink
+                        to="/Favorites"
+                        className={({ isActive }) =>
+                            isActive ? 'active' : 'menu li'
+                        }
+                    >
+                        Favorites
+                        <FavoriteIcon />
+                    </NavLink>
+                    <div className="likeCount">{count}</div>
                 </ul>
             </nav>
         </>

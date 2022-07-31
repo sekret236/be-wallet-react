@@ -12,9 +12,18 @@ import { AboutPage } from 'pages/About/AboutPage'
 import { ContactUsPage } from 'pages/ContactUs/ContactUsPage'
 import { CategoriesPage } from 'pages/Categories/CategoriesPage'
 import { ArticlesDescription } from 'pages/Categories/ArticlesDescription'
-import ServicesPage from 'pages/Services/ServicesPage'
+import ServicesPage from 'pages/Favourites/ServicesPage'
+import { Favorites } from 'components/Favorites/Favorites'
 
-export const Main = ({ toggleLikeState, articlesLikeState }) => {
+export const Main = ({
+    toggleLikeState,
+    articlesLikeState,
+    count,
+    addArticle,
+    removeArticle,
+    favouriteArticle,
+    addArticleToFavourite,
+}) => {
     return (
         <>
             <Routes>
@@ -26,6 +35,10 @@ export const Main = ({ toggleLikeState, articlesLikeState }) => {
                             <Articles
                                 toggleLikeState={toggleLikeState}
                                 articlesLikeState={articlesLikeState}
+                                count={count}
+                                addArticle={addArticle}
+                                removeArticle={removeArticle}
+                                addArticleToFavourite={addArticleToFavourite}
                             />
                             <Features />
                             <ClientsPartners />
@@ -40,6 +53,15 @@ export const Main = ({ toggleLikeState, articlesLikeState }) => {
                 <Route path="/About" element={<AboutPage />} />
                 <Route path="/ContactUs" element={<ContactUsPage />} />
                 <Route path="/Services" element={<ServicesPage />} />
+                <Route
+                    path="/Favorites"
+                    element={
+                        <Favorites
+                            favouriteArticle={favouriteArticle}
+                            
+                        />
+                    }
+                />
                 <Route path="/Category" element={<CategoriesPage />} />
                 <Route path="/Category/Business" element={<BusinessPage />} />
                 <Route path="/Category/Finances" element={<FinancesPage />} />

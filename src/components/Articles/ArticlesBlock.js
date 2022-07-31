@@ -15,6 +15,9 @@ export const ArticlesBlock = ({
     id,
     isLiked = false,
     toggleLikeState,
+    addArticle = { addArticle },
+    removeArticle = { removeArticle },
+    addArticleToFavourite = { addArticleToFavourite },
 }) => {
     return (
         <>
@@ -28,9 +31,18 @@ export const ArticlesBlock = ({
                 <p>{question}</p>
                 <Button variant="light" onClick={() => toggleLikeState(id)}>
                     {isLiked ? (
-                        <FavoriteIcon className="like" />
+                        <FavoriteIcon
+                            className="like"
+                            onClick={() => removeArticle(id)}
+                        />
                     ) : (
-                        <FavoriteBorderIcon className="like" />
+                        <FavoriteBorderIcon
+                            className="like"
+                            onClick={() => {
+                                addArticle(id)
+                                addArticleToFavourite(id, artname)
+                            }}
+                        />
                     )}
                 </Button>
             </div>
