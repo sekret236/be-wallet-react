@@ -15,9 +15,9 @@ export const ArticlesBlock = ({
     id,
     isLiked = false,
     toggleLikeState,
-    addArticle = { addArticle },
-    removeArticle = { removeArticle },
-    addArticleToFavourite = { addArticleToFavourite },
+    addArticle,
+    removeArticle,
+    addArticleToFavourite,
 }) => {
     return (
         <>
